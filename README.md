@@ -1,4 +1,4 @@
-# AUDIOSAMPLE-BIT-TWIDDLING
+# AUDIO-BIT-TWIDDLING
 A collection of audio sample manipulations; using bitwise operators where applicable. Examples are in C. Contributions welcome!  
 
 ##reducing bitdepth

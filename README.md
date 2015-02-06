@@ -18,6 +18,6 @@ if (PCM24bit & 0x800000) PCM24bit |= ~0xffffff;
 ##signed PCM to floating point PCM
 This example uses a 24-bit sample.
 ```c
-double audioFloat = (PCM24bit * (1.0 / 0x7fffff));
+double sampleFloat = (PCM24bit * (1.0 / 0x7fffff));
 //0x7fffff == (2 ^ (24 - 1)) - 1
 ```

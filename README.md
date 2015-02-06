@@ -1,7 +1,7 @@
 # AUDIO-BIT-TWIDDLING
 A collection of audio sample manipulations; using bitwise operators where applicable. Examples are in C, and contributions are welcome.
 
-##increasing bithdepth
+##increasing bitdepth
 ```c
 int32_t PCM24bit = PCM16bit << 8;
 ```

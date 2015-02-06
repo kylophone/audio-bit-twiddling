@@ -2,7 +2,7 @@
 A collection of audio sample manipulations; using bitwise operators where applicable. Examples are in C. Contributions are welcome!  
 
 ##reducing bitdepth
-Go ahead and chop that extra resolution right off. This is called truncation. We should really be adding <a href = "http://en.wikipedia.org/wiki/Dither#Digital_audio">dither</a>, though. 
+Go ahead and chop that extra resolution right off. This is called truncation. We should really be adding <a href = "http://en.wikipedia.org/wiki/Dither#Digital_audio">dither</a> from a larger bitdepth to a smaller bitdepth, though. 
 ```c
 int16_t PCM16bit = PCM24bit >> 8;
 ```

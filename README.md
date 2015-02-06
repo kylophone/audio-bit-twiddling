@@ -1,5 +1,5 @@
 # AUDIO-BIT-TWIDDLING
-A collection of audio sample manipulations; using bitwise operators where applicable. Contributions welcome!  
+A collection of audio sample manipulations; using bitwise operators where applicable. Examples are in C. Contributions welcome!  
 
 ##reducing bitdepth
 Go ahead and chop that extra resolution right off. If we were going the other way, we'd need to add dithering.

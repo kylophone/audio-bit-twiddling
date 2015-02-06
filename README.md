@@ -1,6 +1,11 @@
 # AUDIO-BIT-TWIDDLING
 A collection of audio sample manipulations; using bitwise operators where applicable. Examples are in C. Contributions are welcome!  
 
+##increasing bithdepth
+```c
+int32_t PCM24bit = PCM16bit << 8;
+```
+
 ##reducing bitdepth
 Go ahead and chop that extra resolution right off. This is called truncation. We should really be adding <a href = "http://en.wikipedia.org/wiki/Dither#Digital_audio">dither</a> when going from a larger bitdepth to a smaller bitdepth, though. 
 ```c

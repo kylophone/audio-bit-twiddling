@@ -2,13 +2,13 @@
 A collection of audio sample manipulations; using bitwise operators where applicable. Examples are in C, and contributions are welcome.
 
 ##increasing bitdepth
-You won't be gaining any resolution here, but your samples will be larger.
+You won't be gaining any resolution here, but your samples will be larger. To avoid quantization distortion, we should also be adding dither here.
 ```c
 int32_t PCM24bit = PCM16bit << 8;
 ```
 
 ##reducing bitdepth
-Go ahead and chop that extra resolution right off. This is called truncation. We should really be adding <a href = "http://en.wikipedia.org/wiki/Dither#Digital_audio">dither</a> when going from a larger bitdepth to a smaller bitdepth, though. 
+Go ahead and chop that extra resolution right off. This is called truncation. To avoid quantization distortion, we should also be adding dither here.
 ```c
 int16_t PCM16bit = PCM24bit >> 8;
 ```

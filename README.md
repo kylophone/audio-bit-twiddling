@@ -8,7 +8,7 @@ int32_t PCM24bit = PCM16bit << 8;
 ```
 
 ##reducing bitdepth
-Go ahead and chop that extra resolution right off. This is called truncation. To avoid quantization distortion, we should also be adding dither here.
+Go ahead and truncate that extra resolution. To avoid quantization distortion, we should also be adding dither here.
 ```c
 int16_t PCM16bit = PCM24bit >> 8;
 ```

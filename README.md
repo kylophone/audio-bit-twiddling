@@ -13,6 +13,13 @@ Go ahead and truncate that extra resolution. To avoid quantization distortion, w
 int16_t PCM16bit = PCM24bit >> 8;
 ```
 
+##signed PCM to unsigned PCM
+This example uses a 16-bit sample.
+```c
+int16_t PCM16bit = ((uint16_t) PCM16bit) - 32768;
+```
+
+
 ##unsigned PCM to signed PCM
 This example uses a 24-bit sample.
 ```c
